@@ -10,6 +10,9 @@ Dependencies:
 
 ```pip install pillow```
 
+```pip install requests```
+
+
 Discord token has been removed for obvious reasons, you will need to get your own but that is out of the scope for this guide and there are many online. 
 ## Usage
 Justs needs the name
