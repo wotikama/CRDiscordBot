@@ -42,7 +42,7 @@ async def deck(interaction: discord.Interaction, name: str):
                 url="https://api.clashroyale.com/v1/players/%23"
                 url +=player_tag
                 deck = []
-                r=requests.get( url, headers={"Accept":"application/json", "authorization":"Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzUxMiIsImtpZCI6IjI4YTMxOGY3LTAwMDAtYTFlYi03ZmExLTJjNzQzM2M2Y2NhNSJ9.eyJpc3MiOiJzdXBlcmNlbGwiLCJhdWQiOiJzdXBlcmNlbGw6Z2FtZWFwaSIsImp0aSI6IjUyMjU2YTc5LTIzNzMtNDgyNC1iNTlmLTNkZGVkYjAwMTMwZiIsImlhdCI6MTcyMDM1MTA3Nywic3ViIjoiZGV2ZWxvcGVyLzgxZWI5NzE4LTZlMjEtZjk0MC1iNGNhLWEwNmIwYTUwMzA1MCIsInNjb3BlcyI6WyJyb3lhbGUiXSwibGltaXRzIjpbeyJ0aWVyIjoiZGV2ZWxvcGVyL3NpbHZlciIsInR5cGUiOiJ0aHJvdHRsaW5nIn0seyJjaWRycyI6WyI3OS4xMTYuMzQuMTYwIl0sInR5cGUiOiJjbGllbnQifV19.-m-7FlER1qii6EKbh9UubVYSxGBRvIihDOlNb-ijZ7dxL56O8P_NUeP_Ltv2SpbekIc1jywXemGfx0T798xFHg"}, params = {"limit":20})
+                r=requests.get( url, headers={"Accept":"application/json", "authorization":"Bearer <YOU_CR_API_KEY_HERE>"}, params = {"limit":20})
                 data=json.dumps(r.json(), indent = 2)
                 datajson=json.loads(data)
                 for j in datajson['currentDeck']:
@@ -72,7 +72,7 @@ async def deck(interaction: discord.Interaction, name: str):
                     bytes.seek(0)
                     dfile = discord.File(bytes, filename="image.png")
                     await interaction.followup.send(player,file=dfile)
-bot.run ('MY_TOKEN')
+bot.run ('YOUR_TOKEN')
 
 
 
