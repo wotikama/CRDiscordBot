@@ -1,5 +1,5 @@
 # CRDiscordBot
-Clash Royale Discord Bot To See Oponent's Deck
+Clash Royale Discord Bot To See Opponent's Deck
 
 # A guide, kinda
 Built using discord.py
