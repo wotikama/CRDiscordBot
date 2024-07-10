@@ -1,7 +1,10 @@
 # CRDiscordBot
 Clash Royale Discord Bot To See Opponent's Deck
 
-# A guide, kinda
+# Add to your Discord Server
+https://discord.com/oauth2/authorize?client_id=1260376337806397440&permissions=8&integration_type=0&scope=bot
+
+# Self Host
 Dependencies:
 
 ```pip install discord.py```
