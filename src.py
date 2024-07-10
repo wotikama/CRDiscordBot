@@ -8,7 +8,7 @@ from io import BytesIO
 from discord.ext import commands
 from discord import app_commands
 
-bot = commands.Bot(command_prefix="!", intents=discord.Intents.all())
+bot = commands.Bot(command_prefix="!", intents=discord.Intents(messages=True))
 @bot.event 
 async def on_ready():
         print("Bot is Up and Ready!")
